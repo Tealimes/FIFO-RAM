@@ -34,6 +34,6 @@ module fifo_ram#(
     end
     
     assign full = (wad == DEPTH);
-    assign empty = wad == 0;
+    assign empty = (wad == rad);
     
 endmodule
